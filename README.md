@@ -31,3 +31,8 @@ serverless deploy
     ]
 }
 ```
+
+4. Invoke your function and text X-Ray with Python
+```
+serverless invoke -f hello -l
+```
