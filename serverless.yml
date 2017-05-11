@@ -1,0 +1,12 @@
+service: example-xray-lambda-py
+provider:
+  name: aws
+  runtime: python2.7
+
+package:
+  include:
+    - .vendor/**
+
+functions:
+  hello:
+    handler: handler.hello
