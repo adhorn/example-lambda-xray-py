@@ -1,4 +1,4 @@
-# example-lambda-xray-py
+# What's up?
 Example Lambda Function running Python and X-ray using the https://github.com/racker/fleece/ 
 
 # Build dependencie package
@@ -10,9 +10,7 @@ serverless deploy
 ```
 2. Got to the AWS Lambda Console and enable active tracing for the function.
 
-3. Make sure your lambda function has permission to access GetUser in IAM and use X-Ray.
-
-4. Create a role with the following policy.
+3. Make sure your lambda function has permission to access GetUser in IAM and use X-Ray by creating a role with the following policy.
 ```json
 {
     "Version": "2012-10-17",
