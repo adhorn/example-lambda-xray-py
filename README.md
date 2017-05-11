@@ -11,6 +11,7 @@ serverless deploy
 2. Got to the AWS Lambda Console and enable active tracing for the function.
 
 3. Make sure your lambda function has permission to access GetUser in IAM and use X-Ray by creating a role with the following policy.
+If you use serverless framework to deploy, that step is not necessary since everything is set in the serverless.yml file
 ```json
 {
     "Version": "2012-10-17",
