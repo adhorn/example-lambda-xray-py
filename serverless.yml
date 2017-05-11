@@ -1,8 +1,15 @@
-service: example-xray-lambda-py
+service: example-lambda-xray-py
 provider:
   name: aws
   runtime: python2.7
-
+  iamRoleStatements:
+      -  Effect: "Allow"
+         Action:
+           - "xray:PutTraceSegments"
+           - "xray:PutTelemetryRecords"
+           - "iam:Get*"
+         Resource:
+           - "*"
 package:
   include:
     - .vendor/**
