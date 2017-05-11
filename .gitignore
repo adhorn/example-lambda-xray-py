@@ -1,4 +1,5 @@
-# requirement package
+# Serverless directories
+.serverless
 .vendor
 
 # Byte-compiled / optimized / DLL files
